@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUST Notes Upload and Download</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>MERU UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+            <p>Upload and Download Notes</p>
+        </header>
+
+        <section class="upload-section">
+            <h2>Upload Lecture Notes</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="fileUpload">Choose a file to upload:</label>
+                <input type="file" name="file" id="fileUpload" required>
+                <button type="submit" class="btn-upload">Upload</button>
+            </form>
+        </section>
+
+        <section class="download-section">
+            <h2>Available Lecture Notes</h2>
+            <ul class="file-list">
+                <li><a href="notes/lecture1.pdf" download>Computer security</a></li>
+                <li><a href="notes/lecture2.pdf" download>Computer Design and Architecture</a></li>
+                <li><a href="notes/lecture3.pdf" download>Data Communication</a></li>
+                <!-- Add more notes as the lecturer uploads them -->
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
